@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+/* General styles */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Image container */
+div#meme {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Text labels */
+span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Input fields */
+input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+/* Button */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+img {
+    width: 500px;
+            height: 50       0px;
+            object-fit: contain;    
+}
+
+    </style>
+</head>
+<body>
+    <h1>Meme Editor</h1>
+
+    <div class="meme">
+        <img id="meme"/>
+    </div>
+    <div class="textContainer">
+        <div class="txt0">
+            <span>Text 1</span>
+            <input type="text" id="text0"/>
+        </div>
+        <div class="txt1">
+            <span>Text 2</span>
+            <input type="text" id="text1"/> 
+        </div>
+    </div>
+    <button id="generate">Generate</button>
+    
+</body>
+</html>
